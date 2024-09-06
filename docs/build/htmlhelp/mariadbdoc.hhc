@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+        <param name="Window Styles" value="0x801227">
+        <param name="ImageType" value="Folder">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="MariaDB数据库教程 20240903 文档">
+    <param name="Local" value="index.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="数据库学习环境搭建">
+    <param name="Local" value="installation.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="mariadb安装包下载">
+    <param name="Local" value="installation.html#mariadb">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="mariadb安装">
+    <param name="Local" value="installation.html#id3">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="安装后的状态确认">
+    <param name="Local" value="installation.html#install-after-label">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="快速入门">
+    <param name="Local" value="newcomer/beginner.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="设置环境变量">
+    <param name="Local" value="newcomer/beginner.html#id2">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="数据库基础操作">
+    <param name="Local" value="newcomer/beginner.html#id3">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="登录数据库">
+    <param name="Local" value="newcomer/beginner.html#id4">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="数据库操作">
+    <param name="Local" value="newcomer/beginner.html#id5">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="在表中插入数据">
+    <param name="Local" value="newcomer/beginner.html#id6">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="在表中修改数据">
+    <param name="Local" value="newcomer/beginner.html#modify-data">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="删除表中的数据">
+    <param name="Local" value="newcomer/beginner.html#select-where">
+</OBJECT>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="SELECT进阶">
+    <param name="Local" value="newcomer/select.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="基础要素">
+    <param name="Local" value="newcomer/select.html#id1">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="选择与排序">
+    <param name="Local" value="newcomer/select.html#id3">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="多表查询">
+    <param name="Local" value="newcomer/select.html#id4">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="其它有用的flag">
+    <param name="Local" value="newcomer/select.html#flag">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="数据去重">
+    <param name="Local" value="newcomer/select.html#id6">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="SELECT优先执行">
+    <param name="Local" value="newcomer/select.html#id7">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="计算SELECT查询到的行（rows）数">
+    <param name="Local" value="newcomer/select.html#select-rows">
+</OBJECT>
+</UL>
+</UL>
+</UL></BODY></HTML>

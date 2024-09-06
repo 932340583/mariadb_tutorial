@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>数据库学习环境搭建 &#8212; MariaDB数据库教程 20240903 文档</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
+    <script src="_static/documentation_options.js?v=1254444f"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/translations.js?v=beaddf03"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="快速入门" href="newcomer/beginner.html" />
+    <link rel="prev" title="mariadb数据库教程" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="id1">
+<h1>数据库学习环境搭建<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>为降低学习难度，前期使用windows平台安装数据库进行学习，但生产环境中绝大多数还是使用linux平台。</p>
+</div>
+<section id="mariadb">
+<h2>mariadb安装包下载<a class="headerlink" href="#mariadb" title="Link to this heading">¶</a></h2>
+<p>mariadb站点在国外，不过可以通过国内镜像网站加速下载安装包，如清华大学镜像站 <a class="reference external" href="https://mirrors.tuna.tsinghua.edu.cn/mariadb/mariadb-11.5.2/winx64-packages/mariadb-11.5.2-winx64.msi">下载</a>。</p>
+</section>
+<section id="id3">
+<h2>mariadb安装<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<p>当安装包下载好后，直接双击下载好的文件即可安装，遇到以下界面时需注意：</p>
+<img alt="_images/1-1.png" class="align-center" src="_images/1-1.png" />
+<p>红框里需要设置root管理员密码，箭头处需要勾选，其于界面及选项均保持默认即可。</p>
+</section>
+<section id="install-after-label">
+<span id="id4"></span><h2>安装后的状态确认<a class="headerlink" href="#install-after-label" title="Link to this heading">¶</a></h2>
+<p>当安装完成后，我们需要确认一下数据库是否安装成功及运行状态，按下WIN+R键后，输入 <code class="docutils literal notranslate"><span class="pre">services.msc</span></code>，弹出windows的服务管理窗口，找到 <strong>MariaDB</strong>,可以看到它是运行状态是正在运行。</p>
+<img alt="_images/1-2.png" class="align-center" src="_images/1-2.png" />
+<p>鼠标右键此条目，点击属性，可以进程开机自启等管理。</p>
+<p>自此，数据库的学习环境已搭建成功，接下来可以使用此环境进行数据库的学习与实践。</p>
+<p>请移步 <a class="reference internal" href="newcomer/beginner.html"><span class="doc">快速入门</span></a></p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">MariaDB数据库教程</a></h1>
+
+
+
+
+
+
+
+
+<h3>导航</h3>
+<p class="caption" role="heading"><span class="caption-text">教程目录:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">数据库学习环境搭建</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#mariadb">mariadb安装包下载</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">mariadb安装</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-after-label">安装后的状态确认</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="newcomer/beginner.html">快速入门</a></li>
+<li class="toctree-l1"><a class="reference internal" href="newcomer/select.html">SELECT进阶</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="上一章">mariadb数据库教程</a></li>
+      <li>Next: <a href="newcomer/beginner.html" title="下一章">快速入门</a></li>
+  </ul></li>
+</ul>
+</div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="提交" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, 程亮.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.4.7</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+      |
+      <a href="_sources/installation.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
