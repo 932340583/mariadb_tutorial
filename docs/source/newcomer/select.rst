@@ -1,4 +1,4 @@
-SELECT进阶
+查询数据进阶
 =====================
 
 在此章节开始前，请确保你已学习过 :doc:`/newcomer/beginner` 中的内容。
@@ -245,6 +245,8 @@ JOIN的四种结合方式
 .. image:: ../img/3-6.png
     :align: center
 
+JOIN默认只会输出匹配数据，但是未匹配到的数据，也可以显示出来，这里不得不提到JOIN的四种结合表的方式。
+
 **JOIN** 有四种方式：
 
     * INNER JOIN
@@ -266,7 +268,7 @@ JOIN的四种结合方式
 
     SELECT * FROM books INNER JOIN authors ON books.AuthorID = authors.id;
 
-**LEFT JOIN** 与 **RIGHT JOIN** 的作用是相反的，理解一个就能理解另一个的作用。 **LEFT JOIN** 是指以JOIN为界，JOIN左边的表中的内容
+**LEFT JOIN** 是指以JOIN为界，JOIN左边的表中的内容
 与JOIN右边的表中内容进行匹配，如果没有匹配到，而会输出 **NULL**。如以下SQL：
 
 .. code-block:: sql

@@ -7,7 +7,7 @@
 
     <title>快速入门 &#8212; MariaDB数据库教程 20240903 文档</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d1102ebc" />
-    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=12dfc556" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=a66d8bb5" />
     <script src="../_static/documentation_options.js?v=1254444f"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -24,9 +24,59 @@
   
 
   </head><body>
-  
+  <div class="document">
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">MariaDB数据库教程</a></h1>
 
-    <div class="document">
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="提交" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>导航</h3>
+<p class="caption" role="heading"><span class="caption-text">教程目录:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">数据库学习环境搭建</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">快速入门</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">设置环境变量</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">数据库基础操作</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="select.html">SELECT进阶</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="../installation.html" title="上一章">数据库学习环境搭建</a></li>
+      <li>Next: <a href="select.html" title="下一章">SELECT进阶</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
       <div class="documentwrapper">
         <div class="bodywrapper">
           
@@ -84,7 +134,7 @@
 </section>
 <section id="id5">
 <h3>数据库操作<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
-<p>登录数据库后，我们需要SQL语句进行操作，SQL语句即 <em>Structured Query Language</em>，现代关系型数据库都需要SQL语言进行管理操作。除了在某些数据库上有细微差别外，SQL在所有关系型数据库上的操作几乎一致。</p>
+<p>登录数据库后，我们需要SQL语句进行操作，SQL语句即 <em>Structured Query Language</em>，一个SQL语句去数据库查询数据称之为一次查询，现代关系型数据库都需要SQL语言进行管理操作。除了在某些数据库上有细微差别外，SQL在所有关系型数据库上的操作几乎一致。</p>
 <p>数据库将数据存储于表table中，它很像excel中的sheet，但管理使用数据更精细，一个excel文件就像一个数据库，这个数据库中包含了多个表格sheet，当前可以这样理解数据库的数据存储方式。</p>
 <p>接下来我们创建一个新的数据库并创建表格插入数据，可以理解为新建一个excel文件，请复制以下代码在刚刚的登录成功的数据库上执行：</p>
 <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="k">IF</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="n">test</span><span class="p">;</span>
@@ -112,6 +162,8 @@
 <div class="admonition hint">
 <p class="admonition-title">提示</p>
 <p>当前无需理解刚刚的SQL语句，随着教程的深入，这些内容以后会逐渐理解。注意[]中的test，表示当前在数据库test中，一个数据库服务中有多个数据库，使用USE指定要操作的数据库，比如上面的 <code class="docutils literal notranslate"><span class="pre">USE</span> <span class="pre">test;</span></code> 。</p>
+<p>可以使用 <code class="docutils literal notranslate"><span class="pre">SHOW</span> <span class="pre">DATABASES;</span></code> 查看当前数据库服务上有哪些数据库，注意红框中的数据库是系统默认的数据库，目前无需了解它们的作用，也不要对它们进行操作：</p>
+<img alt="../_images/2-14.png" class="align-center" src="../_images/2-14.png" />
 </div>
 <p>看一下刚刚创建好的表格，接键入 <code class="docutils literal notranslate"><span class="pre">SHOW</span> <span class="pre">TABLES;</span></code>：</p>
 <img alt="../_images/2-8.png" class="align-center" src="../_images/2-8.png" />
@@ -178,60 +230,8 @@
           
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="Main">
-        <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="../index.html">MariaDB数据库教程</a></h1>
-
-
-
-
-
-
-
-
-<h3>导航</h3>
-<p class="caption" role="heading"><span class="caption-text">教程目录:</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../installation.html">数据库学习环境搭建</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">快速入门</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id2">设置环境变量</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">数据库基础操作</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="select.html">SELECT进阶</a></li>
-</ul>
-
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="../index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="../installation.html" title="上一章">数据库学习环境搭建</a></li>
-      <li>Next: <a href="select.html" title="下一章">SELECT进阶</a></li>
-  </ul></li>
-</ul>
-</div>
-<search id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">快速搜索</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
-      <input type="submit" value="提交" />
-    </form>
-    </div>
-</search>
-<script>document.getElementById('searchbox').style.display = "block"</script>
-
-
-
-
-
-
-
-
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
+    <div class="clearer"></div>
+  </div>
     <div class="footer">
       &#169;2024, 程亮.
       

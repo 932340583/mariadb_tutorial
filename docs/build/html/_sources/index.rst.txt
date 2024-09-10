@@ -3,12 +3,12 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-mariadb数据库教程
+MariaDB数据库教程
 ================================
 
-本教程内容分为入门、基础、中级和高级内容，参考mariadb官方文档进行修改编写。市面上绝大多数数据库产品都遵循SQL标准，因此该教程的绝大多数内容也适用于其它数据库的操作。
+本教程内容分为入门、基础、中级和高级内容，参考MariaDB官方文档进行修改编写。市面上绝大多数数据库产品都遵循SQL标准，因此该教程的绝大多数内容也适用于其它数据库的操作。
 
-mariadb是mysql的一个分支，由mysql创始人 **Michael Widenius** 创建，用来规避mysql被Oracle公司收购后的风险，mariadb与mysql完全兼容。
+MariaDB是Mysql的一个分支，由Mysql创始人 **Michael Widenius** 创建，用来规避Mysql被Oracle公司收购后的风险，MariaDB与Mysql完全兼容。
 
 `官网地址`_
 

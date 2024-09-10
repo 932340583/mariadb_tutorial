@@ -24,4 +24,7 @@ MariaDB是Mysql的一个分支，由Mysql创始人 **Michael Widenius** 创建�
    installation
    newcomer/beginner
    newcomer/select
+   basic/basic
+   intermediate/intermediate
+   advanced/advanced
 

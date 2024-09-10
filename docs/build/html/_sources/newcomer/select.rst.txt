@@ -225,7 +225,57 @@ SELECT进阶
 观察 **JOIN** 相对于上面两张表联合查询时的写法，多张表联合查询时要将多个表放到括号内以 **\,** 号隔开，
 并在 **ON** 处用括号将这些表与 **FROM** 处的表描述好关联关系，用 **AND** 相连即可。
 
-多多练习 **SELECT** 的联合查询，即便再长的 **SELECT** 查询语句也不足为虑。
+当然也可以将关联条件逐个写出也可：
+
+.. code-block:: sql
+
+    SELECT Title,isbn,
+    CONCAT(name_first,' ',name_last) AS author
+    FROM books
+    JOIN authors ON books.AuthorID=authors.id
+    JOIN series ON books.SeriesID=series.id
+    WHERE name_first LIKE 'Fran%'
+    ORDER BY Title DESC
+    LIMIT 2;
+
+JOIN的四种结合方式
+-----------------------
+不知你是否注意到，虽然这三个表都以某种方式关联后进行查询得出结果，但有些数据并没有匹配到，可是也没有输出到结果中？
+
+.. image:: ../img/3-6.png
+    :align: center
+
+**JOIN** 有四种方式：
+
+    * INNER JOIN
+    * CROSS JOIN（MariaDB默认的方式）
+    * LEFT JOIN
+    * RIGHT JOIN
+  
+在JOIN从句前没有加任何东西时，JOIN的执行方式就是 **CROSS JOIN**，这是系统默认的，
+此种结合方式下，每一张表的每一行数据都会与其它表的每一行数据结合，这种方式也称之为 `卡迪尔乘积 <https://baike.baidu.com/item/%E7%AC%9B%E5%8D%A1%E5%B0%94%E4%B9%98%E7%A7%AF/6323173>`_ 。
+比如执行以下SQL，查看输出结果，是不是两张表每一行都相互结合了？
+
+.. code-block:: sql
+
+    SELECT * FROM books CORSS JOIN authors;
+
+**INNER JOIN** 是两张表在指定结合条件下，只有匹配到的行才输出出来，如执行以下SQL：
+
+.. code-block:: sql
+
+    SELECT * FROM books INNER JOIN authors ON books.AuthorID = authors.id;
+
+**LEFT JOIN** 与 **RIGHT JOIN** 的作用是相反的，理解一个就能理解另一个的作用。 **LEFT JOIN** 是指以JOIN为界，JOIN左边的表中的内容
+与JOIN右边的表中内容进行匹配，如果没有匹配到，而会输出 **NULL**。如以下SQL：
+
+.. code-block:: sql
+
+    SELECT * FROM authors LEFT JOIN books ON books.AuthorID = authors.id;
+
+**RIGHT JOIN** 的作用则与 **RIGHT JOIN** 相反。
+
+多多练习 **SELECT** 的多表联合查询，即便再长的 **SELECT** 查询语句也不足为虑。
 
 其它有用的flag
 -------------------------

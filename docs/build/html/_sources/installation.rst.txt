@@ -3,13 +3,13 @@
 .. note:: 
     为降低学习难度，前期使用windows平台安装数据库进行学习，但生产环境中绝大多数还是使用linux平台。
 
-mariadb安装包下载
+MariaDB安装包下载
 -----------------------
-mariadb站点在国外，不过可以通过国内镜像网站加速下载安装包，如清华大学镜像站 `下载`_。
+MariaDB站点在国外，不过可以通过国内镜像网站加速下载安装包，如清华大学镜像站 `下载`_。
 
 .. _下载: https://mirrors.tuna.tsinghua.edu.cn/mariadb/mariadb-11.5.2/winx64-packages/mariadb-11.5.2-winx64.msi
 
-mariadb安装
+MariaDB安装
 ----------------
 当安装包下载好后，直接双击下载好的文件即可安装，遇到以下界面时需注意：
 
