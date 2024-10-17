@@ -353,4 +353,8 @@ SELECT优先执行
 
 FOUND_ROWS()记录的值是临时的，只对现在登录的数据库窗口有效，在退出后就消失；多窗口登录的情况下，另一个窗口并不可见，每个窗口即一个连接会话（session）。
 
+<<<<<<< HEAD:docs/source/newcomer/2_select.rst
 在学习完数据查询后，接来学习 :doc:`./3_addChange` 。
+=======
+在学习完数据查询后，接来学习 :doc:`./addChange` 。
+>>>>>>> 06d25da760b33e115fe0c0457dbbccb95b19ff48:docs/source/newcomer/select.rst
