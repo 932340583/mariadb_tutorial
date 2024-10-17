@@ -1,4 +1,4 @@
-查询数据进阶
+数据查询
 =====================
 
 在此章节开始前，请确保你已学习过 :doc:`/newcomer/beginner` 中的内容。
@@ -306,6 +306,8 @@ JOIN默认只会输出匹配数据，但是未匹配到的数据，也可以显�
     WHERE name_first LIKE 'Fra%' 
     ORDER BY Title DESC;
 
+.. _SELECT_priority:
+
 SELECT优先执行
 ^^^^^^^^^^^^^^^^^^^^^
 在一台繁忙的数据库服务中，SELECT查询操作可能在与修改、更新等操作同步进行，此时，修改和更新会优先于SELECT执行，那如果想要提高SELECT的执行级，可以使用 **HIGH_PRIORITY** 来要求服务器优先响应SELECT的查询：
@@ -352,3 +354,5 @@ SELECT优先执行
     SELECT FOUND_ROWS();
 
 FOUND_ROWS()记录的值是临时的，只对现在登录的数据库窗口有效，在退出后就消失；多窗口登录的情况下，另一个窗口并不可见，每个窗口即一个连接会话（session）。
+
+在学习完数据查询后，接来学习 :doc:`./addChange` 。
