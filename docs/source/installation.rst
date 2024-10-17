@@ -31,4 +31,4 @@ MariaDB安装
 
 自此，数据库的学习环境已搭建成功，接下来可以使用此环境进行数据库的学习与实践。
 
-请移步 :doc:`./newcomer/beginner`
+请移步 :doc:`./newcomer/1_beginner`

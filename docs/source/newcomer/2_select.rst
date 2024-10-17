@@ -1,8 +1,8 @@
-查询数据进阶
+数据查询
 =====================
 
-在此章节开始前，请确保你已学习过 :doc:`/newcomer/beginner` 中的内容。
-在 :doc:`/newcomer/beginner` 中，我们使用了非常基础的 **SELECT** 语法去MariaDB中查询数据，
+在此章节开始前，请确保你已学习过 :doc:`/newcomer/1_beginner` 中的内容。
+在 :doc:`/newcomer/1_beginner` 中，我们使用了非常基础的 **SELECT** 语法去MariaDB中查询数据，
 但随着数据表结构和数据量的变化，最基础的 **SELECT** 语法显然是无法满足需要的。因此从本节开始，我们将会探索 **SELECT** 语法中更高级的用法。
 
 基础要素
@@ -277,8 +277,6 @@ JOIN默认只会输出匹配数据，但是未匹配到的数据，也可以显�
 
 **RIGHT JOIN** 的作用则与 **RIGHT JOIN** 相反。
 
-多多练习 **SELECT** 的多表联合查询，即便再长的 **SELECT** 查询语句也不足为虑。
-
 其它有用的flag
 -------------------------
 
@@ -305,6 +303,8 @@ JOIN默认只会输出匹配数据，但是未匹配到的数据，也可以显�
     JOIN authors on AuthorID = id
     WHERE name_first LIKE 'Fra%' 
     ORDER BY Title DESC;
+
+.. _SELECT_priority:
 
 SELECT优先执行
 ^^^^^^^^^^^^^^^^^^^^^
@@ -352,3 +352,5 @@ SELECT优先执行
     SELECT FOUND_ROWS();
 
 FOUND_ROWS()记录的值是临时的，只对现在登录的数据库窗口有效，在退出后就消失；多窗口登录的情况下，另一个窗口并不可见，每个窗口即一个连接会话（session）。
+
+在学习完数据查询后，接来学习 :doc:`./3_addChange` 。

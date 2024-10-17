@@ -20,11 +20,12 @@ MariaDB是Mysql的一个分支，由Mysql创始人 **Michael Widenius** 创建�
 .. toctree::
    :maxdepth: 2
    :caption: 教程目录:
+   :glob:
 
    installation
-   newcomer/beginner
-   newcomer/select
-   basic/basic
-   intermediate/intermediate
-   advanced/advanced
+   newcomer/*
+   basic/*
+   intermediate/*
+   advanced/*
+   
 
