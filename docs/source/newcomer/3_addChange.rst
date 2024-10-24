@@ -228,6 +228,16 @@ UPDATE语句有一个非常有用的特性是可以使用某个字段(column)的
 .. image:: ../img/4-5.png
     :align: center
 
+.. note:: 
+
+    MariaDB数据库中内置数值函数（Numeric Functions），可以直接进行加减乘除的运算，如：
+
+    .. code-block:: sql
+
+        SELECT 2 + 2;
+        SELECT 2 - 1;
+        SELECT 2 * 2;
+        SELECT 2 / 2;
 
 UPDATE甚至可以使用ORDER从句按某个排序规则更新数据：
 

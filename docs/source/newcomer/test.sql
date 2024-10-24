@@ -1,8 +1,0 @@
-<<<<<<< HEAD
-=======
-INSERT LOW_PRIORITY
-INTO  series
-VALUES 
-('11','35228312','2001'),
-('12','45391739','2002');
->>>>>>> 06d25da760b33e115fe0c0457dbbccb95b19ff48
